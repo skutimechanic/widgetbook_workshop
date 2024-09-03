@@ -43,11 +43,13 @@ class PrimaryButton extends StatelessWidget {
                   ),
                 ],
               ),
-            Text(
-              content,
-              style: AppTheme.of(context).typography.label.copyWith(
-                    color: AppTheme.of(context).text.inverse,
-                  ),
+            Expanded(
+              child: Text(
+                content,
+                style: AppTheme.of(context).typography.label.copyWith(
+                      color: AppTheme.of(context).text.inverse,
+                    ),
+              ),
             ),
             if (trailing != null)
               Row(
